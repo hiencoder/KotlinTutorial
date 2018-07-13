@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DemoGridView</string>
+    <string name="thumbnail_des">Thumbnail des</string>
+</resources>
