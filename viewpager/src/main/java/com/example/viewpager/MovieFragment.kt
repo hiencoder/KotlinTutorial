@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import butterknife.BindView
 import butterknife.ButterKnife
+import com.bumptech.glide.Glide
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -38,7 +39,8 @@ class MovieFragment : Fragment() {
         tvTitle.text = bundle!!.getString(Const.KEY_TITLE)
         tvRating.text = bundle!!.getInt(Const.KEY_RATING).toString()
         tvOverview.text = bundle!!.getString(Const.KEY_OVERVIEW)
-        //val idImage =
+        val idImage = Const.identifieImage(activity!!,bundle.getString(Const.KEY_POSTER_URI))
+        Glide.with(activity!!).load(idImage).into(ivmThumbnail)
         return view
     }
 
