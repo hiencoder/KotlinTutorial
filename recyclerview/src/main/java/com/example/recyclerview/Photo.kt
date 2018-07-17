@@ -10,10 +10,10 @@ class Photo(jsonPhoto: JSONObject): Serializable{
     lateinit var humanDate: String
         private set
 
-    private lateinit var explanation: String
+    lateinit var explanation: String
         private set
 
-    private lateinit var url: String
+    lateinit var url: String
         private set
 
     init {
