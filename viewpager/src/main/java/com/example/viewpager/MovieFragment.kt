@@ -25,8 +25,11 @@ private const val ARG_PARAM2 = "param2"
 class MovieFragment : Fragment() {
     @BindView(R.id.tv_title)
     lateinit var tvTitle: TextView
+    @BindView(R.id.tv_rating)
     lateinit var tvRating: TextView
+    @BindView(R.id.tv_overview)
     lateinit var tvOverview: TextView
+    @BindView(R.id.iv_movie)
     lateinit var ivmThumbnail: ImageView
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
